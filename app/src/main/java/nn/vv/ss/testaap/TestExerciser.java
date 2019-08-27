@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 public class TestExerciser implements Exerciser {
 
@@ -21,6 +22,10 @@ public class TestExerciser implements Exerciser {
         this.activity = activity;
         this.parent = parent;
         this.convertView = LayoutInflater.from(activity).inflate(R.layout.your_layout, null);
+
+        ViewHolderSample.Adapter3.ViewHolderItem viewHolderItem = new ViewHolderSample.Adapter3.ViewHolderItem();
+        viewHolderItem.text = (TextView) convertView.findViewById(R.id.text);
+        convertView.setTag(viewHolderItem);
     }
 
 

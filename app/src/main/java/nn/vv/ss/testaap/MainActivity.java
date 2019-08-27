@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 
 public class MainActivity extends AppCompatActivity {
 
-    final int rounds = 100;
+    final int rounds = 100000000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
